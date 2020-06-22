@@ -8,8 +8,8 @@ object WordCountBatch {
     val params: ParameterTool = ParameterTool.fromArgs(args)
 
     // set up execution environment
-    //val env = ExecutionEnvironment.getExecutionEnvironmen
-    val  env =ExecutionEnvironment.createLocalEnvironment(2)
+    val env = ExecutionEnvironment.getExecutionEnvironment
+    //val  env =ExecutionEnvironment.createLocalEnvironment(2)
     // make parameters available in the web interface
     env.getConfig.setGlobalJobParameters(params)
     val text =
