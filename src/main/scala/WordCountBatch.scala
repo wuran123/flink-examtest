@@ -8,6 +8,7 @@ object WordCountBatch {
     val params: ParameterTool = ParameterTool.fromArgs(args)
 
     // set up execution environment
+    //val env = ExecutionEnvironment.createRemoteEnvironment("192.168.175.128",5006)
     val env = ExecutionEnvironment.getExecutionEnvironment
     //val  env =ExecutionEnvironment.createLocalEnvironment(2)
     // make parameters available in the web interface
